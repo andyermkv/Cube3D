@@ -1,0 +1,51 @@
+body {
+  background: url(https://www.toptal.com/designers/subtlepatterns/patterns/topography.png);
+  font: 1em, 'PTSans', Tahoma, Arial;
+}
+
+
+#wrapper {
+  perspective: 800px;
+  margin: 10% 40%;
+}
+
+#cube {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  transform-origin: 50% 50% -150px;
+  /**transform: rotate3d(1,1,1,30deg);**/
+  transform-style: preserve-3d;
+}
+
+.side {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-color: rgba(0,0,0,.4);
+  color: #fff;
+  line-height: 300px;
+  font-size: 6em;
+  border: 5px solid #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(0,0,0,.4);
+  text-shadow: 0 1px 3px rgba(0,0,0,.4);
+  text-align: center;
+  transform-origin: 50% 50% -150px;;
+}
+
+#side2 {
+  transform: rotateY(90deg);
+}
+#side3 {
+  transform: rotateY(-90deg);
+}
+#side4 {
+  transform: rotateX(90deg);
+}
+#side5 {
+  transform: rotateX(-90deg);
+}
+#side6 {
+  transform: rotateY(180deg);
+}
